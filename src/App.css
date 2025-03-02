@@ -1,0 +1,294 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: white;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.home {
+  padding-top: 64px; /* Height of navbar */
+}
+
+.welcome-section {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.welcome-text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-align: center;
+  text-shadow: none;
+  margin: 0;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  text-shadow: none;
+}
+
+.highlight-text {
+  color: #FA693D;
+  font-weight: 600;
+}
+
+.highlight-link {
+  color: #FA693D;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+  color: #e85a2f;
+}
+
+.welcome-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letterFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes letterFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.contact-section {
+  background-color: white;
+  min-height: calc(100vh - 64px);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+#projects {
+  background-color: #1a1a1a;
+  padding: 2rem 0;
+  color: white;
+}
+
+#contact {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+#projects .section-title {
+  color: white;
+}
+
+#contact .section-title {
+  color: #1a1a1a;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Remove the old title classes since we're using section-title now */
+.projects-title, .contact-title {
+  display: none;
+}
+
+/* Add some spacing between sections */
+#projects {
+  padding: 4rem 0;
+}
+
+#contact {
+  padding: 4rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 4rem;
+  }
+  .welcome-section {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 3rem;
+  }
+  .welcome-section {
+    min-height: 250px;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  color: rgba(26, 26, 26, 0.8);
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Add responsive styles for contact links */
+@media (max-width: 480px) {
+  .contact-links {
+    gap: 2rem;
+  }
+
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-label {
+    font-size: 0.9rem;
+  }
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo, .nav-item {
+  color: white;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #FA693D;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.contact-button:hover {
+  background-color: #333;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
