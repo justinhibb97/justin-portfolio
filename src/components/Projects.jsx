@@ -3,7 +3,7 @@ import './Projects.css';
 import mernEstateImg from '../assets/mern-estate-project.png';
 import travelJournalImg from '../assets/travel-journal-project.png';
 import airbnbCloneImg from '../assets/airbnb-online-project.png';
-import socialMediaImg from '../assets/socialMedia.App.png';
+import socialMediaImg from '../assets/socialMediaApp.png';
 
 const ProjectCard = ({ image, title, githubLink, index }) => {
   const style = {
