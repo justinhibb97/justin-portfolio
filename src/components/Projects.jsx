@@ -3,6 +3,7 @@ import './Projects.css';
 import mernEstateImg from '../assets/mern-estate-project.png';
 import travelJournalImg from '../assets/travel-journal-project.png';
 import airbnbCloneImg from '../assets/airbnb-online-project.png';
+import socialMediaImg from '../assets/socialMedia.App.png';
 
 const ProjectCard = ({ image, title, githubLink, index }) => {
   const style = {
@@ -25,8 +26,9 @@ const ProjectCard = ({ image, title, githubLink, index }) => {
 const Projects = () => {
   const projects = [
     { id: 1, title: "Real Estate Site", image: mernEstateImg, githubLink: "https://github.com/justinhibb97/mern-estate" },
-    { id: 2, title: "Travel Journal", image: travelJournalImg, githubLink: "https://github.com/justinhibb97/my-travel-journal" },
-    { id: 3, title: "Airbnb Clone", image: airbnbCloneImg, githubLink: "https://github.com/justinhibb97/react-airbnb-online-experiences" },
+    { id: 2, title: "Social Media App", image: socialMediaImg, githubLink: "https://github.com/justinhibb97/social-media-app" },
+    { id: 3, title: "Travel Journal", image: travelJournalImg, githubLink: "https://github.com/justinhibb97/my-travel-journal" },
+    { id: 4, title: "Airbnb Clone", image: airbnbCloneImg, githubLink: "https://github.com/justinhibb97/react-airbnb-online-experiences" },
   ];
 
   return (
